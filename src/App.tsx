@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/layout/Navbar";
 import Chatbot from "@/components/layout/Chatbot";
 import Home from "./pages/Home";
+import Hospital from "./pages/Hospital";
 import HospitalList from "./pages/HospitalList";
 import HospitalDetails from "./pages/HospitalDetails";
 import DoctorList from "./pages/DoctorList";
@@ -33,6 +34,7 @@ const App = () => (
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/hospital" element={<Hospital />} />
                 <Route path="/hospitals" element={<HospitalList />} />
                 <Route path="/hospitals/:id" element={<HospitalDetails />} />
                 <Route path="/doctors" element={<DoctorList />} />
